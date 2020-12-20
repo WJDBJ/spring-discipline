@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.dao.UserInfoDao">
+
+    <insert id="insert">
+        insert into user_info(username) values('ssssssssssssssssssssssssssssssssssssssssssssss')
+    </insert>
+    <delete id="delete">
+        delete from user_info where id = 4
+    </delete>
+    <select id="getAll" resultType="com.nf.entity.UserInfoEntity">
+        select id,username from user_info order by id
+    </select>
+</mapper>
